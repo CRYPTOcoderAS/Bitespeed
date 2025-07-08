@@ -1,5 +1,5 @@
 import express from "express";
-import identifyRouter from "./routes/identify";
+import identifyRouter from "./api/identify";
 
 const app = express();
 app.use(express.json());

@@ -24,4 +24,4 @@
 
 ## Notes
 - Uses SQLite for local development (see `prisma/schema.prisma`).
-- See `/src/routes/identify.ts` for main logic.
+- See `/src/api/identify.ts` for main logic.
