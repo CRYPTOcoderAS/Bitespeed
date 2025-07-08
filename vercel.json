@@ -1,12 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/identify.ts", "use": "@vercel/node" }
+    {
+      "src": "api/identify.ts",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
     {
       "src": "/api/identify",
-      "dest": "api/identify.ts"
+      "dest": "/api/identify.ts",
+      "methods": ["POST"]
     }
   ]
 }
