@@ -1,12 +1,12 @@
 {
   "version": 2,
   "builds": [
-    { "src": "src/index.ts", "use": "@vercel/node" }
+    { "src": "api/identify.ts", "use": "@vercel/node" }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/src/index.ts"
+      "src": "/api/identify",
+      "dest": "api/identify.ts"
     }
   ]
 }
